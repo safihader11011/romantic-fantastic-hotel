@@ -8,7 +8,7 @@ import useDataApi from 'library/hooks/useDataApi';
 import SectionTitle from 'components/SectionTitle/SectionTitle';
 import {
     LISTING_POSTS_PAGE,
-    SINGLE_POST_PAGE,
+    SINGLE_PACKAGE_PAGE,
 } from '../../../settings/constant';
 import { Row, Col } from 'reactstrap';
 import './Featured.css'
@@ -32,7 +32,7 @@ const Featured = () => {
                             <h1 className='featured_title'>{d.title}</h1>
                             <p>{d.content}</p>
                             <div className='featured_separator'></div>
-                            <p className='featured_price'>Starting from / <span>{d.price} AED</span><TextLink link={`${SINGLE_POST_PAGE}/${d.slug}`} content="DETAILS" className='featured_link' /></p>
+                            <p className='featured_price'>Starting from / <span>{d.price} AED</span><TextLink link={`${SINGLE_PACKAGE_PAGE}/${d.slug}`} content="DETAILS" className='featured_link' /></p>
                         </div>
                     </Col>
                 ))}

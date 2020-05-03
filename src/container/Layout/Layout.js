@@ -41,7 +41,7 @@ export default withRouter(function Layout({ children, location }) {
 
           <Content>{children}</Content>
 
-          {location.pathname === LISTING_POSTS_PAGE ||
+          {
           location.pathname === PRICING_PLAN_PAGE ||
           location.pathname === ADD_HOTEL_PAGE ||
           location.pathname === AGENT_PROFILE_PAGE ||

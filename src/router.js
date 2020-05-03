@@ -10,6 +10,7 @@ import {
   HOME_PAGE,
   LISTING_POSTS_PAGE,
   SINGLE_POST_PAGE,
+  SINGLE_PACKAGE_PAGE,
   ADD_HOTEL_PAGE,
   AGENT_PROFILE_PAGE,
   AGENT_ACCOUNT_SETTINGS_PAGE,
@@ -74,6 +75,17 @@ const routes = [
         ),
       loading: Loading,
       modules: ['SinglePageView'],
+    }),
+  },
+  {
+    path: `${SINGLE_PACKAGE_PAGE}/:slug`,
+    component: Loadable({
+      loader: () =>
+        import(
+          /* webpackChunkName: "SinglePageView" */ './container/SinglePackage/SinglePackageView'
+        ),
+      loading: Loading,
+      modules: ['SinglePackageView'],
     }),
   },
   {

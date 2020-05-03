@@ -9,7 +9,7 @@ import ListingMap from './ListingMap';
 import FilterDrawer from 'components/Search/MobileSearchView';
 import useWindowSize from 'library/hooks/useWindowSize';
 import useDataApi from 'library/hooks/useDataApi';
-import { SINGLE_POST_PAGE } from 'settings/constant';
+import { SINGLE_PACKAGE_PAGE } from 'settings/constant';
 import Heading from 'components/UI/Heading/Heading';
 import TextLink from 'components/UI/TextLink/TextLink';
 import SectionTitle from 'components/SectionTitle/SectionTitle';
@@ -64,15 +64,11 @@ export default function Listing({ location, history }) {
           />
           <SectionGrid
             type="Package"
-            link={SINGLE_POST_PAGE}
+            link={SINGLE_PACKAGE_PAGE}
             columnWidth={columnWidth}
             data={data.filter(function (item) {
               return item.featured;
             })}
-            totalItem={total.length}
-            loading={loading}
-            limit={limit}
-            handleLoadMore={loadMoreData}
             placeholder={<PostPlaceholder />}
           />
 
@@ -81,15 +77,11 @@ export default function Listing({ location, history }) {
           />
           <SectionGrid
             type="Package"
-            link={SINGLE_POST_PAGE}
+            link={SINGLE_PACKAGE_PAGE}
             columnWidth={columnWidth}
             data={data.filter(function (item) {
               return !item.featured;
             })}
-            totalItem={total.length}
-            loading={loading}
-            limit={limit}
-            handleLoadMore={loadMoreData}
             placeholder={<PostPlaceholder />}
           />
 
