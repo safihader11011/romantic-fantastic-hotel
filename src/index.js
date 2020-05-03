@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import theme from 'themes/default.theme';
 import GlobalStyles from 'assets/style/Global.style';
@@ -11,11 +11,11 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyles />
-      <BrowserRouter>
+      <HashRouter>
         <AuthProvider>
           <Routes />
         </AuthProvider>
-      </BrowserRouter>
+      </HashRouter>
     </>
   </ThemeProvider>
 );
