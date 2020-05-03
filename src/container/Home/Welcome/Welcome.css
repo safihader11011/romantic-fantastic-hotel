@@ -1,0 +1,45 @@
+.welcome_heading{
+    font-size: 55px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    margin: 10px 0px;
+}
+
+.welcome_p1{
+    font-size: 25px;
+    color: black;
+}
+
+.welcome_p2{
+    font-size: 18px;
+}
+
+.welcome_button{
+    background-color: #CE181E;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: 0px;
+}
+
+.welcome_button:hover{
+    background-color: rgb(223, 72, 77);
+}
+
+@media screen and (max-width: 600px) {
+    .welcome_heading{
+        font-size: 40px;
+    }
+    
+    .welcome_p1{
+        font-size: 18px;
+    }
+    
+    .welcome_p2{
+        font-size: 16px;
+    }
+    
+    .welcome_button{
+        font-size: 16px;
+    }
+}

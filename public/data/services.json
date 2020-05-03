@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Dine In",
+        "description": "Discover your romantic side with us, The palm with the holiday of lifetime. Enjoy a weekend get away or a couple's retreat for you and your loved one.",
+        "url": "images/services/dine-in.jpg"
+    },
+    {
+        "title": "Wellness / SPA",
+        "description": "Discover your romantic side with us, The palm with the holiday of lifetime. Enjoy a weekend get away or a couple's retreat for you and your loved one.",
+        "url": "images/services/spa.jpg"
+    },
+    {
+        "title": "Wedding",
+        "description": "Discover your romantic side with us, The palm with the holiday of lifetime. Enjoy a weekend get away or a couple's retreat for you and your loved one.",
+        "url": "images/services/wedding.jpeg"
+    },
+    {
+        "title": "Sauna",
+        "description": "Discover your romantic side with us, The palm with the holiday of lifetime. Enjoy a weekend get away or a couple's retreat for you and your loved one.",
+        "url": "images/services/sauna.jpg"
+    },
+    {
+        "title": "Gymnasium",
+        "description": "Discover your romantic side with us, The palm with the holiday of lifetime. Enjoy a weekend get away or a couple's retreat for you and your loved one.",
+        "url": "images/services/gym.jpg"
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 63288,
+        "title": "ATLANTIS THE PALM, DUBAI",
+        "slug": "amet-rem-tempora",
+        "amenities": "wedding",
+        "featured": true,
+        "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
+        "price": "223.00",
+        "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
+        "gallery": [
+            {
+                "id": 11287,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+            },
+            {
+                "id": 51759,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+            },
+            {
+                "id": 1888,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+            }
+        ]
+    },
+    {
+        "id": 10656,
+        "title": "GRAND COSMOPOLITAN",
+        "slug": "dolore-rerum-voluptates",
+        "amenities": "sauna",
+        "featured": true,
+        "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
+        "price": "768.00",
+        "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7.jpg",
+        "gallery": [
+            {
+                "id": 11287,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+            },
+            {
+                "id": 51759,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+            },
+            {
+                "id": 1888,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+            }
+        ]
+    },
+    {
+        "id": 34842,
+        "title": "PLACE DOWNTOWN",
+        "slug": "nulla-ullam-officia",
+        "amenities": "spa",
+        "featured": true,
+        "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
+        "price": "191.00",
+        "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13.jpg",
+        "gallery": [
+            {
+                "id": 11287,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+            },
+            {
+                "id": 51759,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+            },
+            {
+                "id": 1888,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+            }
+        ]
+    },
+    {
+        "id": 10656,
+        "title": "Body Complex",
+        "slug": "dolore-gym-voluptates",
+        "amenities": "gym",
+        "featured": false,
+        "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
+        "price": "35.00",
+        "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4.jpg",
+        "gallery": [
+            {
+                "id": 11287,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+            },
+            {
+                "id": 51759,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+            },
+            {
+                "id": 1888,
+                "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+            }
+        ]
+    }
+]
