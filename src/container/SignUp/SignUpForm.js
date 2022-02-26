@@ -1,13 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Formik } from 'formik';
+import { withRouter } from "react-router";
 import { Redirect } from 'react-router-dom';
 import * as Yup from 'yup';
 import RenderSignUpForm from 'components/SignUp/RenderSignUpForm';
 import { AuthContext } from 'context/AuthProvider';
+import { registerUser } from '../../services/user';
 
 const initialValues = {
   email: '',
-  username: '',
+  // username: '',
   password: '',
   confirmPassword: '',
   termsAndConditions: false,
@@ -16,10 +18,10 @@ const initialValues = {
 
 const getRegisterValidationSchema = () => {
   return Yup.object().shape({
-    username: Yup.string()
-      .min(2, 'Too Short!')
-      .max(50, 'Too Long!')
-      .required('Username is Required!'),
+    // username: Yup.string()
+    //   .min(2, 'Too Short!')
+    //   .max(50, 'Too Long!')
+    //   .required('Username is Required!'),
     email: Yup.string()
       .email('Invalid email')
       .required('Email is Required!'),
@@ -40,12 +42,24 @@ const getRegisterValidationSchema = () => {
   });
 };
 
-export default () => {
+const SignUpComp = (props) => {
   const { signUp, loggedIn } = useContext(AuthContext);
+
   if (loggedIn) return <Redirect to={{ pathname: '/' }} />;
-  const handleSubmit = formProps => {
-    signUp(formProps);
+
+  const handleSubmit = async formProps => {
+    props.onChangeLoader(true);
+    let res = await registerUser(formProps.email, formProps.password);
+    if (!res.error) {
+      props.history.push('/login')
+    }
+    else {
+      props.onChangeLoader(false);
+      props.onChangeError(true);
+      props.onChangeErrorStatus(res.message);
+    }
   };
+
   return (
     <Formik
       initialValues={initialValues}
@@ -55,3 +69,5 @@ export default () => {
     />
   );
 };
+
+export default withRouter(SignUpComp);

@@ -47,10 +47,10 @@ export const MapDataProcessing = compose(
       {multiple && multiple === true ? (
         <GoogleMap
           styles={MAPSTYLE}
-          defaultZoom={7}
+          defaultZoom={5}
           defaultCenter={{
-            lat: 41.8858,
-            lng: -75.7223,
+            lat: 24.96054976,
+            lng: 55.041589590,
           }}
         >
           <MarkerClusterer
@@ -67,8 +67,8 @@ export const MapDataProcessing = compose(
           styles={MAPSTYLE}
           defaultZoom={8}
           defaultCenter={{
-            lat: 40.706877,
-            lng: -74.011265,
+            lat: 24.96054976,
+            lng: 55.041589590,
           }}
         >
           <HotelMapMarkerSingle {...props} />

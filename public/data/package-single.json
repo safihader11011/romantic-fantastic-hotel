@@ -1,251 +1,49 @@
 [
     {
         "id": 65362,
-        "agentId": 2125,
-        "title": "ATLANTIS THE PALM, DUBAI",
+        "title": "Awesome Cotton Chicken",
         "slug": "amet-rem-tempora",
-        "amenities": "wedding",
+        "packageType": "wedding",
         "featured": true,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "223.00",
+        "price": "223.00 AED",
         "isNegotiable": true,
-        "propertyType": "Package",
-        "condition": "Excellent",
-        "hotels": [
-            {
-                "id": 63288,
-                "agentId": 38076,
-                "title": "Burj Al Arab",
-                "slug": "amet-rem-tempora",
-                "content": "Libero omnis aut odio quia est. Reprehenderit sed quam ut est eum ullam facere et. Dolorem et voluptatem molestiae vero et. Minus vero sed et quia. Doloribus quisquam cum corporis molestiae.",
-                "status": "publish",
-                "price": "223.00",
-                "isNegotiable": false,
-                "propertyType": "Villa",
-                "condition": "Poor",
-                "rating": 3,
-                "ratingCount": 1,
-                "contactNumber": "1-114-147-7099",
-                "amenities": [
-                    {
-                        "id": 42453,
-                        "guestRoom": 8
-                    },
-                    {
-                        "id": 30289,
-                        "bedRoom": 6
-                    },
-                    {
-                        "id": 5821,
-                        "wifiAvailability": true
-                    },
-                    {
-                        "id": 22411,
-                        "parkingAvailability": true
-                    },
-                    {
-                        "id": 95762,
-                        "poolAvailability": true
-                    },
-                    {
-                        "id": 27621,
-                        "airCondition": false
-                    },
-                    {
-                        "id": 96437,
-                        "extraBedFacility": false
-                    }
-                ],
-                "image": {
-                    "id": 90096,
-                    "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
-                    "thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
-                },
-                "location": {
-                    "id": 67404,
-                    "lat": 40.706877,
-                    "lng": -74.011265,
-                    "formattedAddress": "52623 Donnie Roads",
-                    "zipcode": "68225-1064",
-                    "city": "Nestorview",
-                    "state_long": "Washington",
-                    "state_short": "WY",
-                    "country_long": "Tanzania",
-                    "country_short": "VN"
-                },
-                "gallery": [
-                    {
-                        "id": 11287,
-                        "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
-                    },
-                    {
-                        "id": 51759,
-                        "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
-                    },
-                    {
-                        "id": 1888,
-                        "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
-                    }
-                ]
-            },
-            {
-                "id": 10656,
-                "agentId": 22344,
-                "title": "Al Qasr Madinat Resort Jumeirah",
-                "slug": "dolore-rerum-voluptates",
-                "content": "Sint aliquam voluptates nam. Exercitationem at ipsam. Ducimus natus ipsa nulla dolores aliquid. Occaecati minus dolores suscipit iste voluptatibus numquam qui tempore.",
-                "status": "publish",
-                "price": "768.00",
-                "isNegotiable": true,
-                "propertyType": "Hotel",
-                "condition": "Poor",
-                "rating": 2,
-                "ratingCount": 1,
-                "contactNumber": "688.399.4392",
-                "amenities": [
-                    {
-                        "id": 23592,
-                        "guestRoom": 2
-                    },
-                    {
-                        "id": 7393,
-                        "bedRoom": 8
-                    },
-                    {
-                        "id": 43675,
-                        "wifiAvailability": false
-                    },
-                    {
-                        "id": 19250,
-                        "parkingAvailability": true
-                    },
-                    {
-                        "id": 4504,
-                        "poolAvailability": true
-                    },
-                    {
-                        "id": 25986,
-                        "airCondition": true
-                    },
-                    {
-                        "id": 75036,
-                        "extraBedFacility": false
-                    }
-                ],
-                "image": {
-                    "id": 25738,
-                    "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7.jpg",
-                    "thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
-                },
-                "location": {
-                    "id": 57557,
-                    "lat": 40.7168,
-                    "lng": -74.0465,
-                    "formattedAddress": "28740 Purdy Rue",
-                    "zipcode": "26632",
-                    "city": "East Lonshire",
-                    "state_long": "Michigan",
-                    "state_short": "ME",
-                    "country_long": "Saint Helena",
-                    "country_short": "TK"
-                },
-                "gallery": [
-                    {
-                        "id": 64454,
-                        "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
-                    },
-                    {
-                        "id": 21253,
-                        "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
-                    },
-                    {
-                        "id": 46809,
-                        "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
-                    }
-                ]
-            },
-            {
-                "id": 34842,
-                "agentId": 66343,
-                "title": "The Harbour Hotel & Residence",
-                "slug": "nulla-ullam-officia",
-                "content": "Totam voluptatum iusto autem est sapiente eius. Autem qui incidunt beatae harum iusto dolorem numquam voluptates qui. Repellendus aut deserunt ipsum ad excepturi velit tempore ut reiciendis. Ducimus officia animi voluptatem sequi. Ut enim sequi delectus adipisci nemo praesentium illo. Rerum ut ab eum.",
-                "status": "draft",
-                "price": "191.00",
-                "isNegotiable": false,
-                "propertyType": "Villa",
-                "condition": "Average",
-                "rating": 4.5,
-                "ratingCount": 14,
-                "contactNumber": "890-827-6932",
-                "amenities": [
-                    {
-                        "id": 35106,
-                        "guestRoom": 2
-                    },
-                    {
-                        "id": 23084,
-                        "bedRoom": 2
-                    },
-                    {
-                        "id": 62049,
-                        "wifiAvailability": false
-                    },
-                    {
-                        "id": 69839,
-                        "parkingAvailability": false
-                    },
-                    {
-                        "id": 51897,
-                        "poolAvailability": false
-                    },
-                    {
-                        "id": 3389,
-                        "airCondition": false
-                    },
-                    {
-                        "id": 90560,
-                        "extraBedFacility": true
-                    }
-                ],
-                "image": {
-                    "id": 42681,
-                    "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13.jpg",
-                    "thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
-                },
-                "location": {
-                    "id": 45160,
-                    "lat": 40.7405,
-                    "lng": -73.9878,
-                    "formattedAddress": "453 Beth Passage",
-                    "zipcode": "78170",
-                    "city": "Lorenhaven",
-                    "state_long": "Oregon",
-                    "state_short": "AK",
-                    "country_long": "Djibouti",
-                    "country_short": "SK"
-                },
-                "gallery": [
-                    {
-                        "id": 37686,
-                        "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
-                    },
-                    {
-                        "id": 15249,
-                        "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
-                    },
-                    {
-                        "id": 23724,
-                        "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
-                    }
-                ]
-            }
-        ],
-        "image": {
-            "id": 41632,
-            "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4.jpg",
-            "thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
-        },
+		"hotelTitle": "ATLANTIS THE PALM, DUBAI",
+		"hotelContent": "In South Williamsburg only a few blocks inland from the East River, Marlo &Sons is a rustic respite with nice wine, good cocktails, and excellent snacking fare such as oysters, local cheese, and potato tortilla. But thereâ€™s more: seasonal salads and soups, the famous brick chicken, a dimly lit space outfitted in various types of wood(this is an Andrew Tarlow restaurant, after all). In many ways.",
+		"condition": "Excellent",
+		"rating": 3.5,
+		"ratingCount": 35,
+        "contactNumber": "1-403-000-9038 x910",
+        "amenities": [
+			{
+				"id": 42453,
+				"guestRoom": 8
+			},
+			{
+				"id": 30289,
+				"bedRoom": 6
+			},
+			{
+				"id": 5821,
+				"wifiAvailability": true
+			},
+			{
+				"id": 22411,
+				"parkingAvailability": true
+			},
+			{
+				"id": 95762,
+				"poolAvailability": true
+			},
+			{
+				"id": 27621,
+				"airCondition": false
+			},
+			{
+				"id": 96437,
+				"extraBedFacility": false
+			}
+		],
         "gallery": [
             {
                 "id": 49921,
@@ -260,6 +58,18 @@
                 "url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-single7.jpg"
             }
         ],
+        "location": {
+			"id": 48797,
+			"lat": 40.706877,
+			"lng": -74.011265,
+			"formattedAddress": "Broklyn New York, United States Of America",
+			"zipcode": "10001",
+			"city": "Broklyn",
+			"state_long": "New York",
+			"state_short": "NY",
+			"country_long": "United States Of America",
+			"country_short": "USA"
+		},
         "createdAt": "2019-01-21T23:53:06.114Z",
         "updatedAt": "2019-01-23T00:38:13.199Z"
     }

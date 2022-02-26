@@ -3,10 +3,10 @@
         "id": 63288,
         "title": "ATLANTIS THE PALM, DUBAI",
         "slug": "amet-rem-tempora",
-        "amenities": "wedding",
+        "packageType": "wedding",
         "featured": true,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "223.00",
+        "price": "223.00 AED",
         "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
         "gallery": [
             {
@@ -27,10 +27,10 @@
         "id": 10656,
         "title": "GRAND COSMOPOLITAN",
         "slug": "dolore-rerum-voluptates",
-        "amenities": "sauna",
+        "packageType": "sauna",
         "featured": true,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "768.00",
+        "price": "768.00 AED",
         "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7.jpg",
         "gallery": [
             {
@@ -51,10 +51,10 @@
         "id": 34842,
         "title": "PLACE DOWNTOWN",
         "slug": "nulla-ullam-officia",
-        "amenities": "spa",
+        "packageType": "spa",
         "featured": true,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "191.00",
+        "price": "191.00 AED",
         "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13.jpg",
         "gallery": [
             {
@@ -75,10 +75,10 @@
         "id": 63288,
         "title": "BURJ-UL-ARAB, DUBAI",
         "slug": "amet-rem-tempora",
-        "amenities": "wedding",
+        "packageType": "wedding",
         "featured": true,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "223.00",
+        "price": "223.00 AED",
         "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3.jpg",
         "gallery": [
             {
@@ -99,10 +99,10 @@
         "id": 63288,
         "title": "BURJ KHALIFA, DUBAI",
         "slug": "amet-rem-tempora",
-        "amenities": "dine-in",
+        "packageType": "dine-in",
         "featured": true,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "223.00",
+        "price": "223.00 AED",
         "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
         "gallery": [
             {
@@ -123,10 +123,10 @@
         "id": 10656,
         "title": "BODY COMPLEX, AJMAN",
         "slug": "dolore-gym-voluptates",
-        "amenities": "gym",
+        "packageType": "gym",
         "featured": false,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "35.00",
+        "price": "35.00 AED",
         "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4.jpg",
         "gallery": [
             {
@@ -147,10 +147,10 @@
         "id": 10656,
         "title": "GLABAL MARQUEES, AJMAN",
         "slug": "dolore-gym-voluptates",
-        "amenities": "wedding",
+        "packageType": "wedding",
         "featured": false,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "35.00",
+        "price": "35.00 AED",
         "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6.jpg",
         "gallery": [
             {
@@ -171,10 +171,10 @@
         "id": 10656,
         "title": "TAJ MARQUEES, SHARJAH",
         "slug": "dolore-gym-voluptates",
-        "amenities": "wedding",
+        "packageType": "wedding",
         "featured": false,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "35.00",
+        "price": "35.00 AED",
         "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9.jpg",
         "gallery": [
             {
@@ -195,10 +195,10 @@
         "id": 10656,
         "title": "CASAMENTO HALL",
         "slug": "dolore-gym-voluptates",
-        "amenities": "sauna",
+        "packageType": "sauna",
         "featured": false,
         "content": "Spend your day with our partner at our hotel with multiple options for surprising your partner. We have 3 different packages that includes, Sauna Bath with Massage,Swimming, Romantic Dinner with Flowers upon arrival.",
-        "price": "35.00",
+        "price": "35.00 AED",
         "image": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
         "gallery": [
             {

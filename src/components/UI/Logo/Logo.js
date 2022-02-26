@@ -5,18 +5,18 @@ import LogoArea from './Logo.style';
 
 const Logo = ({ className, withLink, linkTo, title, src }) => {
   return (
-    <LogoArea className={className}>
+    <LogoArea className={className + " d-flex justify-content-center"}>
       {withLink ? (
         <NavLink to={linkTo}>
           {src && <img src={src} alt="RomanticFantastic" />}
           {title && <h3>{title}</h3>}
         </NavLink>
       ) : (
-        <Fragment>
-          {src && <img src={src} alt="RomanticFantastic" />}
-          {title && <h3>{title}</h3>}
-        </Fragment>
-      )}
+          <Fragment>
+            {src && <img src={src} alt="RomanticFantastic" />}
+            {title && <h3>{title}</h3>}
+          </Fragment>
+        )}
     </LogoArea>
   );
 };

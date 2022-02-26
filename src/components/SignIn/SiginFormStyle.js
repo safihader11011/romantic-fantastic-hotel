@@ -24,8 +24,8 @@ export const FieldWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 41px;
-  margin-bottom: 41px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   > a {
     color: ${themeGet('primary.0', '#CE181E')};
@@ -53,14 +53,14 @@ export const SwitchWrapper = styled.div`
   }
 
   .ant-switch {
-    min-width: 36px;
-    height: 21px;
+    min-width: 20px;
+    height: 16px;
     &.ant-switch-checked {
       background-color: ${themeGet('primary.0', '#CE181E')};
     }
     &::after {
-      width: 17px;
-      height: 17px;
+      width: 12px;
+      height: 12px;
     }
     &:focus {
       box-shadow: none;

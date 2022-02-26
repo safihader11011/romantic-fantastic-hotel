@@ -7,10 +7,10 @@ import ViewWithPopup from 'components/UI/ViewWithPopup/ViewWithPopup';
 import InputIncDec from 'components/UI/InputIncDec/InputIncDec';
 import DateRangePickerBox from 'components/UI/DatePicker/ReactDates';
 import { setStateToUrl, getStateFromUrl } from '../url_handler';
+
 import {
   priceInit,
   calenderItem,
-  getAmenities,
   getPropertyType,
 } from '../SearchParams';
 import CategroySearchWrapper, {
@@ -19,7 +19,7 @@ import CategroySearchWrapper, {
   ActionWrapper,
 } from './CategorySearch.style';
 
-const CategotySearch = ({ history, location }) => {
+const CategotySearch = ({ packageTypes, history, location, match }) => {
   const searchParams = getStateFromUrl(location);
   const state = {
     amenities: searchParams.amenities || [],
@@ -33,31 +33,33 @@ const CategotySearch = ({ history, location }) => {
     };
     const search = setStateToUrl(query);
     history.push({
-      pathname: '/listing',
+      pathname: (match.params.city) ? `/listing/${match.params.city}` : '/listing',
       search: search,
     });
+    window.location.reload();
   };
 
   const onSearchReset = () => {
     const search = setStateToUrl({ reset: '' });
     history.push({
-      pathname: '/listing',
+      pathname: (match.params.city) ? `/listing/${match.params.city}` : '/listing',
       search: search,
     });
+    window.location.reload();
   };
 
   return (
     <CategroySearchWrapper>
-      {getAmenities.options.map(a => (
+      {packageTypes.options.map(a => (
         <div className="view_with__popup">
           <div className="popup_handler">
-            {(amenities.includes(a.value)) ?
-              <Button type="default" onClick={value => onChange([a.value], 'amenities')} style={{ backgroundColor: '#CE181E', color: '#fff' }}>
-                {a.label}
+            {(amenities.includes(a.name)) ?
+              <Button type="default" onClick={value => onChange([a.name], 'amenities')} style={{ backgroundColor: '#CE181E', color: '#fff' }}>
+                {a.name}
               </Button>
               :
-              <Button type="default" onClick={value => onChange([a.value], 'amenities')}>
-                {a.label}
+              <Button type="default" onClick={value => onChange([a.name], 'amenities')}>
+                {a.name}
               </Button>
             }
           </div>

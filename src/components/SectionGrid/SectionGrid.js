@@ -58,7 +58,7 @@ export default function SectionGrid({
               <Box
                 className="grid_column"
                 width={columnWidth}
-                key={item.id}
+                // key={item.id}
                 {...columnStyle}
               >
                 <ProductCard link={link} type={type} {...item} />

@@ -12,7 +12,6 @@ import FormWrapper, {
 } from './SiginFormStyle';
 
 const RenderBasicInfoForm = props => {
-  console.log(props, 'formprops');
 
   const { values, submitCount, handleSubmit, forgetPasswordLink } = props;
   return (
@@ -23,7 +22,7 @@ const RenderBasicInfoForm = props => {
           name="email"
           type="email"
           size="large"
-          placeholder="dummy@dummy.io"
+          placeholder="Enter Email..."
           defaultValue={values.email}
           submitCount={submitCount}
           hasFeedback
@@ -33,7 +32,7 @@ const RenderBasicInfoForm = props => {
           name="password"
           type="password"
           size="large"
-          placeholder="Type anything..."
+          placeholder="Enter Password..."
           submitCount={submitCount}
           hasFeedback
         />

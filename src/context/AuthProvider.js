@@ -63,15 +63,16 @@ const AuthProvider = props => {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(null);
 
-  const signIn = params => {
+  const signIn = (props) => {
     /**
      * Make post request here to authenticate with fetch
      * if returns true then change the state
      */
-    console.log(params, 'sign in form Props');
-    setUser(fakeUserData);
-    setToken(fakeToken);
-    addItem('token', fakeToken);
+    console.log(props, 'sign in form Props');
+    setUser(props.user);
+    setToken(props.refresh);
+    addItem('user', props.user);
+    addItem('token', props.refresh);
     setLoggedIn(true);
   };
   const signUp = params => {
@@ -103,6 +104,7 @@ const AuthProvider = props => {
   const logOut = () => {
     setUser(null);
     setToken(null);
+    clearItem('user');
     clearItem('token');
     setLoggedIn(false);
   };

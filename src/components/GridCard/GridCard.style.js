@@ -65,7 +65,7 @@ export const ImageWrapper = styled.div`
   }
 
   .react-multi-carousel-list {
-    min-height: 150px;
+    min-height: 170px;
     background-color: #e9e8ec;
   }
 

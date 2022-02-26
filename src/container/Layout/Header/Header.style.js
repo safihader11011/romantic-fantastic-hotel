@@ -211,6 +211,7 @@ export const MobileNavbar = styled.nav`
 export const LogoArea = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
 
   > a {
     flex-shrink: 0;
@@ -255,7 +256,7 @@ export const CloseDrawer = styled.div`
 
 export const AvatarWrapper = styled.div`
   display: flex;
-  padding: 25px 35px;
+  padding: 25px 15px;
   align-items: center;
   background-color: ${themeGet('color.2', '#F7F7F7')};
 `;
@@ -276,10 +277,9 @@ export const AvatarImage = styled.div`
 export const AvatarInfo = styled.div`
   h3 {
     color: ${themeGet('text.0', '#2C2C2C')};
-    font-size: 15px;
+    font-size: 12px;
     line-height: 18px;
-    font-weight: 700;
-    margin-bottom: 5px;
+    font-weight: 500;
   }
 
   a {
@@ -309,8 +309,11 @@ export const NavbarSearchWrapper = styled.div`
     max-width: 320px;
   }
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 991px) {
     padding-right: 15px;
+  }
+
+  @media only screen and (max-width: 480px) {
     box-sizing: border-box;
   }
 
@@ -356,7 +359,7 @@ export const NavbarSearchWrapper = styled.div`
     width: 20px;
     height: 20px;
 
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 991px) {
       right: 25px;
     }
   }

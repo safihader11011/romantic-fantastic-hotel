@@ -10,33 +10,33 @@ import PostThumb1 from 'assets/images/packages/bg/package-thumb-1.jpg';
 import PostThumb2 from 'assets/images/packages/bg/package-thumb-2.jpg';
 import PostThumb3 from 'assets/images/packages/bg/package-thumb-3.jpg';
 
-const images = [
-  {
-    original: PostImage1,
-    thumbnail: PostThumb1,
-  },
-  {
-    original: PostImage2,
-    thumbnail: PostThumb2,
-  },
-  {
-    original: PostImage3,
-    thumbnail: PostThumb3,
-  },
-];
+let images = [];
 
-const PostImageGallery = () => {
+const PostImageGallery = ({ package_images }) => {
+  images = [];
+  package_images.map(package_image => {
+    images.push({
+      original: package_image.image,
+      thumbnail: package_image.image
+    })
+  })
   return (
-    <ImageGalleryWrapper>
-      <ImageGallery
-        items={images}
-        showPlayButton={false}
-        showFullscreenButton={false}
-        showIndex={true}
-        lazyLoad={true}
-        slideDuration={550}
-      />
-    </ImageGalleryWrapper>
+    <React.Fragment>
+      {(images.length > 0) ?
+        <ImageGalleryWrapper>
+          <ImageGallery
+            items={images}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            showIndex={true}
+            lazyLoad={true}
+            slideDuration={550}
+          />
+        </ImageGalleryWrapper>
+        :
+        <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: '600', color: '#CE181E' }}>No Photos Available</h1>
+      }
+    </React.Fragment>
   );
 };
 

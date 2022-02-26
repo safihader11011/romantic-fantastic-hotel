@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import useDataApi from 'library/hooks/useDataApi';
 import { Row, Col } from 'reactstrap';
@@ -10,12 +10,30 @@ import Services4 from '../../assets/images/Services/Services4.PNG'
 import './Services.css'
 
 const Services = () => {
-    const [index, setIndex] = useState(0);
+    const [selectedFiles, setSelectedFiles] = useState(null);
     const { data, loading } = useDataApi('/data/services.json');
 
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-    };
+    const fileInput = useRef(null);
+
+    // const handleSelect = (selectedIndex, e) => {
+    //     setIndex(selectedIndex);
+    // };
+
+    useEffect(() => {
+        if (selectedFiles) {
+            let formdata = new FormData();
+            formdata.append('images', selectedFiles);
+            console.log(selectedFiles)
+        }
+    }, [selectedFiles]);
+
+    const selectFileHandler = event => {
+        setSelectedFiles(event.target.files);
+    }
+
+    const FileUploadHandler = () => {
+
+    }
 
     return (
         <div className="ServicesContainer">
@@ -23,6 +41,21 @@ const Services = () => {
             <img className="ServicesImages" src={Services2} />
             <img className="ServicesImages" src={Services3} />
             <img className="ServicesImages" src={Services4} />
+            {/* <div>
+                <input style={{ display: 'none' }}
+                    type="file"
+                    onChange={selectFileHandler}
+                    multiple="multiple"
+                    ref={fileInput}
+                />
+                <botton onClick={() => fileInput.current.click()}>Pick File</botton>
+                <button onClick={FileUploadHandler}>Upload</button>
+                {(selectedFiles)?
+                <img src={URL.createObjectURL(selectedFiles[0])} alt="selectedfile"/>
+                :
+                null
+                }
+            </div> */}
         </div>
     );
 };

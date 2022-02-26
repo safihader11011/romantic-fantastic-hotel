@@ -7,8 +7,8 @@ const SignInWrapper = styled.div`
 `;
 
 export const SignInFormWrapper = styled.div`
-  width: 43%;
-  padding: 81px;
+  width: 40%;
+  padding: 40px 81px;
 
   @media only screen and (min-width: 1441px) {
     padding: 130px;
@@ -40,7 +40,7 @@ export const SignInFormWrapper = styled.div`
             input {
               border-radius: 3px;
               border: 1px solid ${themeGet('border.3', '#E6E6E6')};
-              height: 57px;
+              height: 40px;
               padding: 6px 20px;
               color: ${themeGet('text.0', '#2C2C2C')};
               font-size: 15px;
@@ -59,7 +59,7 @@ export const SignInFormWrapper = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    height: 57px;
+    height: 40px;
     font-size: 17px;
     font-weight: 700;
     border-color: ${themeGet('primary.0', '#CE181E')};
@@ -96,7 +96,7 @@ export const SignInFormWrapper = styled.div`
     &.github-btn,
     &.firebase-btn,
     &.google-btn {
-      height: 57px;
+      height: 40px;
       border-radius: 3px;
       font-size: 15px;
       font-weight: 700;
@@ -166,7 +166,7 @@ export const TitleInfo = styled.p`
 `;
 
 export const SignInBannerWrapper = styled.div`
-  width: 57%;
+  width: 60%;
 
   @media only screen and (max-width: 1200px) {
     width: 50%;
@@ -178,7 +178,7 @@ export const SignInBannerWrapper = styled.div`
 
   > div {
     position: fixed;
-    width: 57%;
+    width: 60%;
     top: 0;
     right: 0;
 

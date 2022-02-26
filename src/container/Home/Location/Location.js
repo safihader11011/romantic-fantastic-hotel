@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
 import Loader from 'components/Loader/Loader';
@@ -13,8 +13,11 @@ import GlideCarousel, {
 import useDataApi from 'library/hooks/useDataApi';
 import { LISTING_POSTS_PAGE } from 'settings/constant';
 import LocationWrapper, { CarouselSection } from './Location.style';
+import { getPackagesCount } from '../../../services/packages';
+import { baseUrl } from '../../../services/axios'
+
 const carouselOptions = {
-  type: 'carousel',
+  type: 'slider',
   perView: 5,
   gap: 30,
   hoverpause: true,
@@ -42,44 +45,72 @@ const carouselOptions = {
 };
 
 const LocationGrid = () => {
-  const { data } = useDataApi('/data/location.json');
+
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  let fetchPackagesCount = async () => {
+    let data = await getPackagesCount();
+    if (data) {
+      setData(data);
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    fetchPackagesCount()
+  }, [])
 
   return (
-    <LocationWrapper>
-      {console.log(data)}
-      <Container fluid={true}>
-        <SectionTitle
-          title={<Heading content="Explore Destinations" />}
-          link={<TextLink link={LISTING_POSTS_PAGE} content="Show all" />}
-        />
+    <React.Fragment>
+      {(loading) ?
+        <div className="loader" >
+          <Loader
+            type="ThreeDots"
+            color="#CE181E"
+            height={100}
+            width={100}
+          // timeout={3000} //3 secs
+          />
+        </div>
+        :
+        <LocationWrapper>
+          {console.log(data)}
+          <Container fluid={true}>
+            <SectionTitle
+              title={<Heading content="Explore Destinations" />}
+              link={<TextLink link={LISTING_POSTS_PAGE} content="Show all" />}
+            />
 
-        <CarouselSection>
-          {data.length !== 0 ? (
-            <GlideCarousel
-              carouselSelector="explore_carousel"
-              prevButton={<IoIosArrowBack />}
-              nextButton={<IoIosArrowForward />}
-              options={carouselOptions}
-            >
-              <>
-                {data.map((post, index) => (
-                  <GlideSlide key={index}>
-                    <ImageCard
-                      link="listing"
-                      imageSrc={post.locationImage.url}
-                      title={post.city}
-                      meta={`${post.numberOfPost} Hotels`}
-                    />
-                  </GlideSlide>
-                ))}
-              </>
-            </GlideCarousel>
-          ) : (
-              <Loader />
-            )}
-        </CarouselSection>
-      </Container>
-    </LocationWrapper>
+            <CarouselSection>
+              {data.length !== 0 ? (
+                <GlideCarousel
+                  carouselSelector="explore_carousel"
+                  prevButton={<IoIosArrowBack />}
+                  nextButton={<IoIosArrowForward />}
+                  options={carouselOptions}
+                >
+                  <>
+                    {data.map((post, index) => (
+                      <GlideSlide key={index}>
+                        <ImageCard
+                          link={`listing/${post.city}`}
+                          imageSrc={(post.image) ? (baseUrl + post.image) : null}
+                          title={post.city}
+                          meta={`${post.noOfPackages} Packages`}
+                        />
+                      </GlideSlide>
+                    ))}
+                  </>
+                </GlideCarousel>
+              ) : (
+                  <Loader />
+                )}
+            </CarouselSection>
+          </Container>
+        </LocationWrapper>
+      }
+    </React.Fragment>
   );
 };
 

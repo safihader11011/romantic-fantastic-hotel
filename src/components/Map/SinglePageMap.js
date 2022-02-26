@@ -8,15 +8,15 @@ const SingleMapDisplay = props => {
   const { location, infoWindowToggle, isOpen, markerIndex } = props;
 
   locationArray.push({
-    lat: location && location.location.lat,
-    lng: location && location.location.lng,
-    id: location && location.id,
-    title: location && location.title,
-    thumbUrl: location && location.image.thumb_url,
-    formattedAddress: location && location.location.formattedAddress,
-    price: location && location.price,
-    rating: location && location.rating,
-    ratingCount: location && location.ratingCount,
+    lat: location && location.lat,
+    lng: location && location.lng,
+    // id: location && location.id,
+    // title: location && location.title,
+    // thumbUrl: location && location.image.thumb_url,
+    formattedAddress: location && location.formattedAddress,
+    // price: location && location.price,
+    // rating: location && location.rating,
+    // ratingCount: location && location.ratingCount,
   });
 
   return locationArray.map((singlePostLoaction, index) => {
@@ -25,11 +25,11 @@ const SingleMapDisplay = props => {
         key={index}
         icon={MakerImage}
         position={singlePostLoaction}
-        onClick={() => {
-          infoWindowToggle(singlePostLoaction.id);
-        }}
+        // onClick={() => {
+        //   infoWindowToggle(singlePostLoaction.id);
+        // }}
       >
-        {isOpen && markerIndex === singlePostLoaction.id ? (
+        {/* {isOpen && markerIndex === singlePostLoaction.id ? (
           <HotelInfoWindow
             postData={singlePostLoaction}
             onCloseClick={() => {
@@ -38,7 +38,7 @@ const SingleMapDisplay = props => {
           />
         ) : (
           ''
-        )}
+        )} */}
       </Marker>
     );
   });

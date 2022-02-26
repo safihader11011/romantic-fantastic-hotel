@@ -21,7 +21,7 @@ const Location = ({
       <LocationWrapper>
         <Heading as="h2" content="Location" {...titleStyle} />
         <Text content={formattedAddress} {...locationMetaStyle} />
-        <Text
+        {/* <Text
           content="Take an easy walk to the main historic sites of the city. The
           neighborhood is perfect for an authentic taste of Roman life, with
           shops, art galleries, restaurants, bars, and clubs all nearby and
@@ -33,7 +33,7 @@ const Location = ({
           {...contentStyle}
           {...boldContentStyle}
         />
-        <Text content="26 mins by car without traffic" {...contentStyle} />
+        <Text content="26 mins by car without traffic" {...contentStyle} /> */}
         <Map>
           <MapDataProcessing location={location} multiple={false} />
         </Map>
@@ -59,7 +59,7 @@ Location.defaultProps = {
     fontSize: '13px',
     fontWeight: '400',
     color: '#909090',
-    mb: ['14px', '20px', '27px'],
+    mb: ['14px', '16px', '20px'],
   },
   contentStyle: {
     fontSize: '15px',

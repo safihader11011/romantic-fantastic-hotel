@@ -1,3 +1,5 @@
+import { getPackageTypes } from '../../services/packages';
+
 // default data for filter elements
 export const priceInit = {
   0: '$0',
@@ -10,20 +12,15 @@ export const calenderItem = {
   locale: 'en',
 };
 
-export const getAmenities = {
-  id: 1,
-  name: 'Amenities',
-  identifier: 'amenities',
-  options: [
-    { label: 'Dine In', value: 'dine-in' },
-    { label: 'Wedding', value: 'wedding' },
-    { label: 'Sauna', value: 'sauna' },
-    { label: 'SPA', value: 'spa' },
-    { label: 'GYM', value: 'gym' },
-    { label: 'Swimming', value: 'swimming' },
-    { label: 'Theatre', value: 'theatre' },
-  ],
-};
+export const getAmenities = async () => {
+  let res = await getPackageTypes();
+  return {
+    id: 1,
+    name: 'Amenities',
+    identifier: 'amenities',
+    options: res.results
+  };
+}
 
 export const getPropertyType = {
   id: 2,

@@ -19,8 +19,8 @@ const topBarMenu = [
     target: 'overview',
   },
   {
-    name: 'Hotels',
-    target: 'amenities',
+    name: 'Hotel',
+    target: 'hotel',
   }
 ];
 
@@ -67,7 +67,7 @@ const SideButtons = props => {
 };
 
 const TopBar = props => {
-  const { title, shareURL, author, media } = props;
+  const { title, shareURL, media } = props;
   return (
     <TobBarWrapper>
       <Sticky innerZ={9999} top={80} activeClass="isSticky">

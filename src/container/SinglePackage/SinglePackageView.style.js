@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import singlePostBgImg from 'assets/images/packages/bg/single-package-bg.jpg';
 
 const SinglePageWrapper = styled.div`
   padding-bottom: 56px;
@@ -197,7 +196,6 @@ export const ButtonGroup = styled.div`
 `;
 
 export const PostImage = styled.div`
-  background-image: url(${singlePostBgImg});
   background-position: center center;
   background-size: cover;
   height: 600px;
@@ -207,10 +205,38 @@ export const PostImage = styled.div`
     height: 406px;
   }
 
+  .pricing{
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.9);
+    padding: 0px 30px;
+    height: 37px;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+    p {
+      margin: 0px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .pricing{
+      left: auto;
+      right: 0px;
+      bottom: 80px;
+      border-radius: 20px 0px 0px 20px;  
+    }
+  }
+
   .image_gallery_button {
     background: ${themeGet('color.1', '#ffffff')};
-    border-radius: 3px;
-    font-size: 15px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 0px 30px;
+    font-size: 18px;
     font-weight: 700;
     color: #2c2c2c;
     border: 0;
@@ -218,7 +244,7 @@ export const PostImage = styled.div`
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     position: absolute;
     bottom: 30px;
-    right: 25px;
+    right: 0px;
 
     &:hover,
     &:focus {

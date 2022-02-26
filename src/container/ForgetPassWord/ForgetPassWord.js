@@ -15,8 +15,8 @@ export default function ForgetPassWord() {
     <ForgetPassWordWrapper>
       <ForgetPassWordFormWrapper>
         <Logo withLink linkTo="/" src={tripFinder} title="" />
-        <Title>Welcome Back</Title>
-        <TitleInfo>Enter your email to recover your account</TitleInfo>
+        <Title style={{ textAlign: 'center' }}>Welcome Back</Title>
+        <TitleInfo style={{ textAlign: 'center' }}>Enter your email to recover your account</TitleInfo>
         <ForgetPassWordForm />
       </ForgetPassWordFormWrapper>
       <ForgetPassWordBannerWrapper>

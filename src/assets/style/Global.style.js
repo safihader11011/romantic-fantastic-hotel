@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background: ${themeGet('primary.0', '#CE181E')};
+    // background: ${themeGet('primary.0', '#CE181E')};
     color: ${themeGet('color.1', '#ffffff')};
   }
 
@@ -84,6 +84,19 @@ const GlobalStyle = createGlobalStyle`
     main.ant-layout-content {
       flex: 1 0 auto;
     }
+  }
+
+  .form-group {
+    color: #2C2C2C;
+  }
+
+  .form-group label {
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .form-group *:focus{
+    outline: 0 !important;
   }
 
   .hotel-submission-form {

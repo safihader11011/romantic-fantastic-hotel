@@ -45,15 +45,15 @@ export const SwitchWrapper = styled.div`
   align-items: center;
 
   .ant-switch {
-    min-width: 36px;
-    height: 21px;
+    min-width: 20px;
+    height: 16px;
     margin-right: 10px;
     &.ant-switch-checked {
       background-color: ${themeGet('primary.0', '#CE181E')};
     }
     &::after {
-      width: 17px;
-      height: 17px;
+      width: 12px;
+      height: 12px;
     }
     &:focus {
       box-shadow: none;

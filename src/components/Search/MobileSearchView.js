@@ -34,7 +34,7 @@ import CategroySearchWrapper, {
   ActionWrapper,
 } from './CategorySearch/CategorySearch.style';
 
-const FilterDrawer = ({ history, location }) => {
+const FilterDrawer = ({ packageTypes, history, location, match }) => {
   const searchParams = getStateFromUrl(location);
 
   // state for drawer
@@ -147,20 +147,22 @@ const FilterDrawer = ({ history, location }) => {
       amenities: amenities
     });
     history.push({
-      pathname: '/listing',
+      pathname: (match.params.city) ? `/listing/${match.params.city}` : '/listing',
       search: search,
     });
     setToggle(false);
+    window.location.reload();
   };
 
   const handleCloseDrawer = () => {
     const search = setStateToUrl({ reset: '' });
     setAmenities([]);
     history.push({
-      pathname: '/listing',
+      pathname: (match.params.city) ? `/listing/${match.params.city}` : '/listing',
       search: search,
     });
     setToggle(false);
+    window.location.reload();
   };
 
   return (
@@ -180,19 +182,19 @@ const FilterDrawer = ({ history, location }) => {
       >
         <FilterElementsWrapper>
           <Accordion allowZeroExpanded={true}>
-            {getAmenities.options.map(a => (
+            {packageTypes.options.map(a => (
               <div className="view_with__popup">
                 <div className="popup_handler">
-                  {(amenities.includes(a.value)) ?
+                  {(amenities.includes(a.name)) ?
                     <AccordionItem>
-                      <Button type="default" onClick={value => onChangeAmenity([a.value])} style={{ backgroundColor: '#CE181E', color: '#fff', width: '100%', margin: '10px 0px 0px', padding: '6px', height: 'auto' }}>
-                        {a.label}
+                      <Button type="default" onClick={value => onChangeAmenity([a.name])} style={{ backgroundColor: '#CE181E', color: '#fff', width: '100%', margin: '10px 0px 0px', padding: '6px', height: 'auto' }}>
+                        {a.name}
                       </Button>
                     </AccordionItem>
                     :
                     <AccordionItem>
-                      <Button type="default" onClick={value => onChangeAmenity([a.value])} style={{ width: '100%', margin: '10px 0px 0px', padding: '6px', height: 'auto' }}>
-                        {a.label}
+                      <Button type="default" onClick={value => onChangeAmenity([a.name])} style={{ width: '100%', margin: '10px 0px 0px', padding: '6px', height: 'auto' }}>
+                        {a.name}
                       </Button>
                     </AccordionItem>
                   }
@@ -202,7 +204,7 @@ const FilterDrawer = ({ history, location }) => {
           </Accordion>
 
           <ButtonGroup>
-            <Button onClick={handleCloseDrawer}>Cancel Filter</Button>
+            <Button onClick={handleCloseDrawer}>Clear Filter</Button>
             <Button type="primary" onClick={handleApplyFilter}>
               Apply Filter
             </Button>

@@ -70,8 +70,8 @@ export const AvatarWrapper = styled.div`
     position: relative;
 
     .dropdown-handler {
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       overflow: hidden;
       border-radius: 50%;
       cursor: pointer;
@@ -86,6 +86,7 @@ export const AvatarWrapper = styled.div`
       min-width: 180px;
       border-right: 0;
       position: absolute;
+      left: auto;
       right: 0;
       top: 45px;
       border-radius: 4px;
@@ -94,10 +95,12 @@ export const AvatarWrapper = styled.div`
       &.hide {
         opacity: 0;
         visibility: hidden;
+        display: none;
       }
       &.active {
         opacity: 1;
         visibility: visible;
+        display: block;
       }
       li {
         color: ${themeGet('text.0', '#2C2C2C')};
@@ -107,6 +110,14 @@ export const AvatarWrapper = styled.div`
         height: auto;
         padding: 0;
         transition: color 0.2s ease-in-out;
+        &.ant-menu-item {
+          h3{
+            font-size: 12px;
+            text-align: center;
+            font-weight: 600;
+            margin: 5px 10px;
+          }
+        }
         &.ant-menu-item-selected,
         &.ant-menu-item-active {
           background-color: transparent;

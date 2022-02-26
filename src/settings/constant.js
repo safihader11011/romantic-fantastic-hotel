@@ -5,6 +5,7 @@ export const AGENTS_PAGE = '/agents';
 
 // Listing Single Page Section
 export const LISTING_POSTS_PAGE = '/listing';
+export const LISTING_CITY_PAGE = '/listing/:city';
 export const SINGLE_POST_PAGE = '/post';
 export const SINGLE_PACKAGE_PAGE = '/package';
 

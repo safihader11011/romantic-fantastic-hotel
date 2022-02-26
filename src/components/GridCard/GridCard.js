@@ -33,7 +33,7 @@ const GridCard = ({
         {/* {location && <LocationArea>{location}</LocationArea>} */}
         {title && <TitleArea>{title}</TitleArea>}
         <MetaWrapper className="meta_wrapper">
-          {price && <PriceArea className="price">{price}</PriceArea>}
+          {price && <PriceArea className="price"><b>Price: </b>{price}</PriceArea>}
           {rating && <RatingArea className="rating">{rating}</RatingArea>}
           {viewDetailsBtn || editBtn ? (
             <ButtonGroup className="button_group">

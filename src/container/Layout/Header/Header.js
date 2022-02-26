@@ -17,6 +17,8 @@ import MainMenu from './MainMenu';
 import MobileMenu from './MobileMenu';
 import ProfileMenu from './ProfileMenu';
 import NavbarSearch from './NavbarSearch';
+import Cookies from 'js-cookie';
+
 import HeaderWrapper, {
   MobileNavbar,
   CloseDrawer,
@@ -25,9 +27,9 @@ import HeaderWrapper, {
   AvatarInfo,
   LogoArea,
 } from './Header.style';
+import avatarImg from '../../../assets/images/user-icon.png';
 
 import tripFinder from 'assets/images/logo.png';
-const avatarImg = `http://s3.amazonaws.com/redqteam.com/isomorphic-reloaded-image/profilepic.png`;
 
 const LogoIcon = () => (
   <svg width="25" height="27.984" viewBox="0 0 25 27.984">
@@ -51,6 +53,7 @@ export default withRouter(function Header({ location }) {
     setState(!state);
   };
 
+  const user = Cookies.get('user');
   const headerType = location.pathname === '/' ? 'transparent' : 'default';
 
   return (
@@ -109,7 +112,7 @@ export default withRouter(function Header({ location }) {
                 placement="right"
                 closable={false}
                 onClose={sidebarHandler}
-                width="285px"
+                width="80%"
                 className="mobile-header"
                 visible={state}
               >
@@ -119,19 +122,19 @@ export default withRouter(function Header({ location }) {
                   </button>
                 </CloseDrawer>
                 {loggedIn ? (
-                  null
-                  // <AvatarWrapper>
-                  //   <AvatarImage>
-                  //     <Logo src={avatarImg} />
-                  //   </AvatarImage>
-                  //   <AvatarInfo>
-                  //     <Text as="h3" content="Nova Scotia" />
-                  //     <TextLink
-                  //       link={AGENT_PROFILE_PAGE}
-                  //       content="View Profile"
-                  //     />
-                  //   </AvatarInfo>
-                  // </AvatarWrapper>
+                  
+                  <AvatarWrapper>
+                    <AvatarImage>
+                      <Logo src={avatarImg} />
+                    </AvatarImage>
+                    <AvatarInfo>
+                      <Text as="h3" content={user} />
+                      {/* <TextLink
+                        link={AGENT_PROFILE_PAGE}
+                        content="View Profile"
+                      /> */}
+                    </AvatarInfo>
+                  </AvatarWrapper>
                 ) : (
                     <AuthMenu className="auth-menu" />
                   )}

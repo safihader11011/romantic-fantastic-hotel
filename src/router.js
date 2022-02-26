@@ -9,6 +9,7 @@ import {
   FORGET_PASSWORD_PAGE,
   HOME_PAGE,
   LISTING_POSTS_PAGE,
+  LISTING_CITY_PAGE,
   SINGLE_POST_PAGE,
   SINGLE_PACKAGE_PAGE,
   ADD_HOTEL_PAGE,
@@ -78,7 +79,7 @@ const routes = [
     }),
   },
   {
-    path: `${SINGLE_PACKAGE_PAGE}/:slug`,
+    path: `${SINGLE_PACKAGE_PAGE}/:id`,
     component: Loadable({
       loader: () =>
         import(
@@ -96,6 +97,17 @@ const routes = [
       loading: Loading,
       modules: ['Listing'],
     }),
+    exact: true
+  },
+  {
+    path: LISTING_CITY_PAGE,
+    component: Loadable({
+      loader: () =>
+        import(/* webpackChunkName: "Listing" */ './container/Listing/Listing'),
+      loading: Loading,
+      modules: ['Listing'],
+    }),
+    exact: true
   },
   {
     path: AGENT_PROFILE_PAGE,

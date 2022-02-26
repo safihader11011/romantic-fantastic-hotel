@@ -15,7 +15,7 @@ const RenderSignUpForm = props => {
   return (
     <FormWrapper>
       <Form onSubmit={handleSubmit}>
-        <Field
+        {/* <Field
           component={AntInput}
           name="username"
           type="text"
@@ -24,7 +24,7 @@ const RenderSignUpForm = props => {
           submitCount={submitCount}
           value={values.username}
           hasFeedback
-        />
+        /> */}
         <Field
           component={AntInput}
           name="email"
@@ -56,7 +56,7 @@ const RenderSignUpForm = props => {
           hasFeedback
         />
         <FieldWrapper className="field-container">
-          <SwitchWrapper>
+          {/* <SwitchWrapper>
             <Field
               component={AntSwitch}
               name="rememberMe"
@@ -64,7 +64,7 @@ const RenderSignUpForm = props => {
               value={values.rememberMe}
             />
             <Label>Remember Me</Label>
-          </SwitchWrapper>
+          </SwitchWrapper> */}
           <SwitchWrapper className="termsAndConditions">
             <Field
               component={AntSwitch}

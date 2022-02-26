@@ -3,6 +3,9 @@ import Menu from 'components/UI/Antd/Menu/Menu';
 import useOnClickOutside from 'library/hooks/useOnClickOutside';
 import { NavLink, withRouter } from 'react-router-dom';
 import { AuthContext } from 'context/AuthProvider';
+import Cookies from 'js-cookie';
+import Text from 'components/UI/Text/Text';
+
 import {
   AGENT_PROFILE_PAGE,
   AGENT_ACCOUNT_SETTINGS_PAGE,
@@ -28,6 +31,9 @@ const ProfileMenu = ({ avatar, history }) => {
     logOut();
     history.push('/');
   }
+
+  const user = Cookies.get('user');
+
   return (
     <div className="avatar-dropdown" ref={dropdownRef}>
       <div className="dropdown-handler" onClick={handleDropdown}>
@@ -35,18 +41,12 @@ const ProfileMenu = ({ avatar, history }) => {
       </div>
 
       <Menu className={`dropdown-menu ${state ? 'active' : 'hide'}`}>
-        {/* <Menu.Item onClick={closeDropdown} key="0">
-          <NavLink to={AGENT_PROFILE_PAGE}>View Profile</NavLink>
+        <Menu.Item onClick={closeDropdown} key="0">
+          <h3>{user}</h3>
         </Menu.Item>
-        <Menu.Item onClick={closeDropdown} key="1">
-          <NavLink to={ADD_HOTEL_PAGE}>Add Hotel</NavLink>
-        </Menu.Item>
-        <Menu.Item onClick={closeDropdown} key="2">
-          <NavLink to={AGENT_ACCOUNT_SETTINGS_PAGE}>Account Settings</NavLink>
-        </Menu.Item> */}
-        <Menu.Item key="3">
+        {/* <Menu.Item key="3">
           <button onClick={handleLogout}>Log Out</button>
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
     </div>
   );

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Heading from 'components/UI/Heading/Heading';
 import Text from 'components/UI/Text/Text';
 import TextLink from 'components/UI/TextLink/TextLink';
+import { TextButton } from '../SinglePackageView.style';
 import { FaWifi, FaCarAlt, FaSwimmer, FaAirFreshener } from 'react-icons/fa';
 import IconCard from 'components/IconCard/IconCard';
 import AmenitiesWrapper, { AmenitiesArea } from './Amenities.style';
@@ -12,18 +13,18 @@ import { PostPlaceholder } from 'components/UI/ContentLoader/ContentLoader';
 import { Element } from 'react-scroll';
 import './Packages.css'
 
-const Amenities = ({ titleStyle, linkStyle, hotels, contentStyle }) => {
+const Amenities = ({ titleStyle, linkStyle, amenities }) => {
   return (
     <Element name="amenities" className="Amenities">
       <AmenitiesWrapper>
-        <Heading as="h2" content="Hotels" {...titleStyle} />
-        {/* <Text content="Hotels that offer this package" {...contentStyle} /> */}
-        <SectionGrid
-          link={SINGLE_POST_PAGE}
-          columnWidth={[1 / 1, 1 / 2, 1 / 3, 1 / 4]}
-          data={hotels}
-          placeholder={<PostPlaceholder />}
-        />
+        <Heading as="h2" content="Amenities" {...titleStyle} />
+        <AmenitiesArea>
+          <ul>
+            {amenities.map(a => (
+              <li style={{fontSize: '14px', color: '#2C2C2C', fontWeight: '400', margin: '10px 0px'}}>{a.name}</li>
+            ))}
+          </ul>
+        </AmenitiesArea>
       </AmenitiesWrapper>
     </Element>
   );

@@ -7,8 +7,8 @@ const ForgetPassWordWrapper = styled.div`
 `;
 
 export const ForgetPassWordFormWrapper = styled.div`
-  width: 43%;
-  padding: 81px;
+  width: 40%;
+  padding: 40px 81px;
 
   @media only screen and (min-width: 1441px) {
     padding: 130px;
@@ -60,7 +60,7 @@ export const ForgetPassWordFormWrapper = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    height: 57px;
+    height: 40px;
     font-size: 17px;
     font-weight: 700;
     border-color: ${themeGet('primary.0', '#CE181E')};
@@ -129,7 +129,7 @@ export const TitleInfo = styled.p`
 `;
 
 export const ForgetPassWordBannerWrapper = styled.div`
-  width: 57%;
+  width: 60%;
 
   @media only screen and (max-width: 1200px) {
     width: 50%;
@@ -141,7 +141,7 @@ export const ForgetPassWordBannerWrapper = styled.div`
 
   > div {
     position: fixed;
-    width: 57%;
+    width: 60%;
     top: 0;
     right: 0;
     @media only screen and (max-width: 1200px) {

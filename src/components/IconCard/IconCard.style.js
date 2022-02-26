@@ -7,6 +7,7 @@ const IconCardWrapper = styled.div`
   background-color: ${themeGet('color.2', '#F7F7F7')};
   margin-bottom: 20px;
   text-align: ${props => (props.align ? props.align : 'center')};
+  margin: 0px 10px 0px 0px;
 
   @media only screen and (max-width: 480px) {
     padding: 28px 20px 25px;

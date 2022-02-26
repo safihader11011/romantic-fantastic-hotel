@@ -14,6 +14,7 @@ const FormWrapper = styled.div`
       }
       .ant-form-item-control-wrapper {
         .ant-form-item-control {
+          line-height: 35px;
           input {
             &:focus {
               box-shadow: none;
@@ -34,10 +35,10 @@ const FormWrapper = styled.div`
 `;
 
 export const FieldWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 21px;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  // margin-top: 21px;
   margin-bottom: 21px;
 
   @media only screen and (max-width: 1200px) {
@@ -85,14 +86,14 @@ export const SwitchWrapper = styled.div`
   }
 
   .ant-switch {
-    min-width: 36px;
-    height: 21px;
+    min-width: 20px;
+    height: 16px;
     &.ant-switch-checked {
       background-color: ${themeGet('primary.0', '#CE181E')};
     }
     &::after {
-      width: 17px;
-      height: 17px;
+      width: 12px;
+      height: 12px;
     }
     &:focus {
       box-shadow: none;
